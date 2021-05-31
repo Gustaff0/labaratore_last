@@ -74,11 +74,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'labaratore_last.wsgi.application'
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-    )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.TokenAuthentication',
+#     )
+# }
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -90,7 +90,7 @@ DATABASES = {
     }
 }
 
-LOGIN_REDIRECT_URL = 'webapp:home'
+LOGIN_REDIRECT_URL = 'webapp:index'
 LOGOUT_REDIRECT_URL = 'accounts:login'
 
 # Password validation

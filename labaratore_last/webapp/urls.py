@@ -5,5 +5,5 @@ app_name = 'webapp'
 
 
 urlpatterns = [
-    path('index/', index, name='index' ),
+    path('', index, name='index' ),
 ]

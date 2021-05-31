@@ -15,7 +15,7 @@ class IsOwnerOrReadOnly(BasePermission):
         if view.action == 'partial_update' or view.action == 'destroy':
             return request.user.is_authenticated and request.user.is_superuser
         else :
-            return False
+            return True
         return True
 
     def has_object_permission(self, request, view, obj):
